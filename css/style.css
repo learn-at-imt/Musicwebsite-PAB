@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+    box-sizing: border-box;
+}
+
+
+
+#image{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 34px;
+    color: #fff;
+    font-weight: bolder;
+    text-shadow: 0 05px 05px rgba(0,0,0,1);
+}
+
+#navbar{
+    height: 60px;
+    width: 800px;
+    position: absolute;
+    top: 50px;
+    right: 5%;
+    border-radius: 20px;
+    z-index: 999;
+    overflow: hidden;
+}
+
+#navbar ul{
+    height: 100%;
+    width: 850px;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+}
+
+#navbar ul li a{
+    height: 100%;
+    width: auto;
+    margin: 0 30px;
+    font-size: 25px;
+    margin-left: 0;
+    display: grid;
+    place-items: center;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#navbar ul li a:hover{
+    color: aqua;
+    border-bottom: 2px solid aqua;
+    width: calc(100% - 150px);
+}
+
+
+
+
+#showcase{
+    background-image: url('../image/pic1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:0 20px;
+}
+
+#content{
+    height: auto;
+    width: 555px;
+    position: absolute;
+    right: 9%;
+    top: calc(50% - 215px);
+}
+
+#content h2{
+    font-size: 170px;
+    text-shadow: 0 05px 05px rgba(0,0,0,1);
+    color: #fff;
+}
+
+#content p{
+    font-size: 18px;
+    color: #fff;
+}
+
+#content button{
+    height: 65px;
+    width: 210px;
+    border: none;
+    outline: none;
+    border-radius: 70px;
+    margin: 20px 0;
+    font-size: 20px;
+    background: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+#content button:hover{
+    color: black;
+    border: 2px solid black;
+    background: transparent;
+}
+#sociallinks{
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+#sociallinks a{
+    text-decoration: none;
+    margin: 12px 0;
+}
+
+#sociallinks a i{
+    height: 50px;
+    width: 50px;
+    margin: 0 20px;
+    font-size: 20px;
+    display: grid;
+    color: #fff;
+    background: black;
+    place-items: center;
+    border-radius: 10px;
+}
+
+#sociallinks a i:hover{
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+
+.music i{
+    background: black;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 0px;
+    right: 19%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    border: 2px solid black;
+    animation: animate 6s ease-in-out infinite;
+}
+
+
+
+@keyframes animate{
+    0%,100%{
+        background: black;
+        color: #fff;
+        right: 19%;
+    }50%{
+        background:transparent;
+        color:black;
+        right: 25%;
+    }
+}
