@@ -91,6 +91,13 @@
     color: #fff;
 }
 
+#content h3{
+    font-size: 35px;
+    color: #fff;
+    text-align: left;
+    text-shadow: 0 03px 03px rgba(0,0,0,1);
+}
+
 #content button{
     height: 65px;
     width: 210px;
